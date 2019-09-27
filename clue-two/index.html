@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Multi-Puzzle Cache</title>
+  </head>
+  <style media="screen">
+    .container {
+      margin: auto;
+      max-width: 1200px;
+    }
+
+    .responsive-image {
+      max-width: 100%;
+    }
+
+    .cell img {
+      display: block;
+      border: 2px solid black;
+    }
+
+    .special-cell img {
+      display: block;
+      border: 2px solid black;
+      margin: 2rem auto;
+    }
+
+    .cell img.special-border {
+      border-top: none;
+    }
+
+
+    @media screen and (min-width: 200px) {
+      .grid {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+      }
+      .cell {
+        width: 50%;
+      }
+    }
+  </style>
+  <body>
+    <div class="container">
+        <div class="special-cell">
+          <img src="world-map.jpg" class="responsive-image">
+        </div>
+      <div class="grid">
+        <div class="cell">
+          <img src="left.jpg" class="responsive-image">
+        </div>
+        <div class="cell">
+          <img src="up.jpeg" class="responsive-image">
+        </div>
+        <div class="cell">
+          <img src="down.jpg" class="responsive-image special-border">
+        </div>
+        <div class="cell">
+          <img src="right.jpg" class="responsive-image special-border">
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
